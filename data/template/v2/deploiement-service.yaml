@@ -1,0 +1,42 @@
+#SERVICES:
+#  - Role: "Service_1"
+#    NomServeurs: ["Nom_Hote_1", "Nom_Hote_2"]
+#
+#  - Role: "Service_2"
+#    NomServeurs: []
+
+
+SERVICES:
+  - Role: "AD-Certificate"
+    NomServeurs: []
+
+  - Role: "AD-Domain-Services"
+    NomServeurs: []
+
+  - Role: "ADFS-Federation"
+    NomServeurs: []
+
+  - Role: "DNS"
+    NomServeurs: []
+
+  - Role: "Hyper-V"
+    NomServeurs: []
+  
+  - Role: "NPAS"
+    NomServeurs: []
+
+  - Role: "Print-Services"
+    NomServeurs: []
+
+  - Role: "Remote-Desktop-Services"
+    NomServeurs: []
+
+  - Role: "VolumeActivation"
+    NomServeurs: []
+
+  - Role: "WDS"
+    NomServeurs: []
+
+
+  - Role: "Web-Server"
+    NomServeurs: []

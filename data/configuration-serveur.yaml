@@ -1,8 +1,5 @@
-# SERVEURS:
-#   - { Nom: "Nom_Hote", ipv4: "Adresse", utilisateur: "Nom_Utilisateur", cle_ssh: "Chemin\\De\\Clef_SSH_Hote"}
-
 SERVEURS:
-  - { Nom: "vm01-dc-prod-75", ipv4: "10.0.0.10", utilisateur: "adm01", cle_ssh: "E:\\gestion_cle_ssh\\id_adm01.pem"}
-  - { Nom: "vm01-ca-prod-75", ipv4: "10.0.0.11", utilisateur: "adm01", cle_ssh: "E:\\gestion_cle_ssh\\id_adm01.pem"}
-  - { Nom: "vm01-web-prod-75", ipv4: "10.0.0.12", utilisateur: "adm01", cle_ssh: "E:\\gestion_cle_ssh\\id_adm01.pem"}
-  - { Nom: "srv01-hv-prod-75", ipv4: "10.0.0.13", utilisateur: "adm01", cle_ssh: "E:\\gestion_cle_ssh\\id_adm01.pem"}
+  - { Nom: "vm01-dc-prod-75",   ipv4: "10.0.0.10",  utilisateur: "adm01", cle_ssh: "E:\\gestion_cle_ssh\\id_adm01.pem"}
+  - { Nom: "vm01-ca-prod-75",   ipv4: "10.0.0.11",  utilisateur: "adm01", cle_ssh: "E:\\gestion_cle_ssh\\id_adm01.pem"}
+  - { Nom: "vm01-web-prod-75",  ipv4: "10.0.0.12",  utilisateur: "adm01", cle_ssh: "E:\\gestion_cle_ssh\\id_adm01.pem"}
+  - { Nom: "srv01-hv-prod-75",  ipv4: "10.0.0.13",  utilisateur: "adm01", cle_ssh: "E:\\gestion_cle_ssh\\id_adm01.pem"}
