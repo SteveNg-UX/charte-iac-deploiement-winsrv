@@ -9,20 +9,20 @@
 ---
 
 ### Guide d'utilisaiton :
-1 - Télécharger /Cloner le projet
-2 - Ouvrir la console Powershell
-3 - lancer la commande suivant :
-4 - se diriger dans le dossier projet
-5 - une fois les modifications fait en fonction du besoin, lancer la commande suivante :
+1. Télécharger /Cloner le projet
+2. Ouvrir la console Powershell
+3. lancer la commande suivant :
+4. se diriger dans le dossier projet
+5. une fois les modifications fait en fonction du besoin, lancer la commande suivante :
 ```Powershell
 .\run.ps1
 ```
 
 ##### Alternative :
-1 - Télécharger /Cloner le projet
-2 - se diriger dans le dossier projet via l'explorateur de fichier
-3 - Clique-droit sur le fichier "run.ps1"
-4 - CLiquer sur "Exécuter avec PowerShell"
+1. Télécharger /Cloner le projet
+2. se diriger dans le dossier projet via l'explorateur de fichier
+3. Clique-droit sur le fichier "run.ps1"
+4. CLiquer sur "Exécuter avec PowerShell"
 
 ---
 
