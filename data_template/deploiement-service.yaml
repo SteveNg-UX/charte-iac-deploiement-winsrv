@@ -1,0 +1,54 @@
+#SERVICES:
+#  - Role: 'Service_1'
+#    DataSource: '.\Service_1\data.yaml'
+#    NomServeurs: ['Nom_Hote_1', 'Nom_Hote_2']
+#
+#  - Role: 'Service_2'
+#    DataSource: '.\Service_2\data.yaml'
+#    NomServeurs: []
+
+
+SERVICES:
+  - Role: 'AD-Certificate'
+    DataSource: '.\AD-Certificate\data.yaml'
+    NomServeurs: []
+
+  - Role: 'AD-Domain-Services'
+    DataSource: '.\AD-Domain-Services\data.yaml'
+    NomServeurs: []
+
+  - Role: 'ADFS-Federation'
+    DataSource: '.\ADFS-Federation\data.yaml'
+    NomServeurs: []
+
+  - Role: 'DNS'
+    DataSource: '.\DNS\data.yaml'
+    NomServeurs: []
+
+  - Role: 'Hyper-V'
+    DataSource: '.\Hyper-V\data.yaml'
+    NomServeurs: []
+  
+  - Role: 'NPAS'
+    DataSource: '.\NPAS\data.yaml'
+    NomServeurs: []
+
+  - Role: 'Print-Services'
+    DataSource: '.\Print-Services\data.yaml'
+    NomServeurs: []
+
+  - Role: 'Remote-Desktop-Services'
+    DataSource: '.\Remote-Desktop-Services\data.yaml'
+    NomServeurs: []
+
+  - Role: 'VolumeActivation'
+    DataSource: '.\VolumeActivation\data.yaml'
+    NomServeurs: []
+
+  - Role: 'WDS'
+    DataSource: '.\WDS\data.yaml'
+    NomServeurs: []
+
+  - Role: 'Web-Server'
+    DataSource: '.\Web-Server\data.yaml'
+    NomServeurs: []

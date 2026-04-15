@@ -1,0 +1,20 @@
+SERVICES:
+  - Role: 'AD-Certificate'
+    DataSource: '.\AD-Certificate\data.yaml'
+    NomServeurs: ['vm01-ca-prod-75']
+
+  - Role: 'AD-Domain-Services'
+    DataSource: '.\AD-Domain-Services\data.yaml'
+    NomServeurs: ['vm01-dc-prod-75']
+
+  - Role: 'DNS'
+    DataSource: '.\DNS\data.yaml'
+    NomServeurs: ['vm01-dc-prod-75']
+
+  - Role: 'Hyper-V'
+    DataSource: '.\Hyper-V\data.yaml'
+    NomServeurs: ['srv01-hv-prod-75']
+
+  - Role: 'Web-Server'
+    DataSource: '.\Web-Server\data.yaml'
+    NomServeurs: ['vm01-web-prod-75']

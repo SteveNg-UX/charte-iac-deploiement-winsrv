@@ -1,0 +1,62 @@
+#DATA:
+#  Domaine: 'mondomaine.local'
+#  Netbios: 'MONDOMAINE'
+#  Chemin_BDD: 'Chemin\Base_de_donnee'
+#  Chemin_Journal: 'Chemin\LOG'
+#  Chemin_Sysvol: 'Chemin\SYSVOL'
+#  OU:
+#    - Nom: 'Unite_Orga_1'
+#      Chemin_DN: 'DC=mondomaine, DC=local'
+
+#    - Nom: 'Unite_Orga_2'
+#      Chemin_DN: 'OU=Unite_Orga_1, DC=mondomaine, DC=local'
+#
+#  Groupes:
+#    - Nom: 'Groupe_1'
+#      Membre_Groupes: []
+#      Scope: 'Global'
+#      Chemin_DN: 'OU=Unite_Orga_2, OU=Unite_Orga_1, DC=mondomaine, DC=local'
+#
+#    - Nom: 'Groupe_2'
+#      Membre_Groupes: ['Groupe_1']
+#      Scope: 'LocalDomain'
+#      Chemin_DN: 'OU=Unite_Orga_2, OU=Unite_Orga_1, DC=mondomaine, DC=local'
+#
+#    - Nom: 'Groupe_3'
+#      Membre_Groupes: ['Groupe_1']
+#      Scope: 'LocalDomain'
+#      Chemin_DN: 'OU=Unite_Orga_2, OU=Unite_Orga_1, DC=mondomaine, DC=local'
+#
+#  Utilisateurs:
+#    - Prenom: 'Alice'
+#      Nom: 'AA'
+#      Membre_Groupes: ['Groupe_1', 'Groupe_2']
+#      Chemin_DN: ''
+#
+#    - Prenom: 'Bob'
+#      Nom: 'BB'
+#      Membre_Groupes: ['Groupe_3']
+#      Chemin_DN: 'OU=Unite_Orga_2, OU=Unite_Orga_1, DC=mondomaine, DC=local'
+
+
+DONNEE:
+  Domaine: ''
+  Netbios: ''
+  Chemin_BDD: 'C:\\WINDOWS\\NTDS'
+  Chemin_Journal: 'C:\\WINDOWS\\NTDS'
+  Chemin_Sysvol: 'C:\\WINDOWS\\SYSVOL'
+  OU:
+    - Nom: ''
+      Chemin_DN: ''
+
+  Groupes:
+    - Nom: ''
+      Membre_Groupes: []
+      Scope: ''
+      Chemin_DN: ''
+
+  Utilisateurs:
+    - Prenom: ''
+      Nom: ''
+      Membre_Groupes: []
+      Chemin_DN: ''

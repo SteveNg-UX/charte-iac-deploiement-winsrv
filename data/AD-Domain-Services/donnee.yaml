@@ -1,0 +1,68 @@
+DONNEE:
+  Domaine: 'test.local'
+  Netbios: 'TEST'
+  Chemin_BDD: 'C:\\WINDOWS\\NTDS'
+  Chemin_Journal: 'C:\\WINDOWS\\NTDS'
+  Chemin_Sysvol: 'C:\\WINDOWS\\SYSVOL'
+  OU:
+    - Nom: 'Service'
+      Chemin_DN: 'DC=test, DC=local'
+
+    - Nom: 'IT'
+      Chemin_DN: 'OU=Service, DC=test, DC=local'
+
+    - Nom: 'USERS'
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+
+    - Nom: 'COMPUTERS'
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+
+    - Nom: 'GROUPES'
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+
+  Groupes:
+    - Nom: 'Developpeurs'
+      Membre_Groupes: []
+      Scope: 'Global'
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+
+    - Nom: 'Operateurs'
+      Membre_Groupes: []
+      Scope: 'Global'
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+
+    - Nom: 'AGDLP_DOSSIER_DEVELOPPEURS_RWX'
+      Membre_Groupes: ['Developpeurs']
+      Scope: 'DomainLocal'
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+
+    - Nom: 'AGDLP_DOSSIER_OPERATEURS_RWX'
+      Membre_Groupes: ['Operateurs']
+      Scope: 'DomainLocal'
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+
+    - Nom: 'AGDLP_DOSSIER_DEVELOPPEURS_R-X'
+      Membre_Groupes: ['Developpeurs']
+      Scope: 'DomainLocal'
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+
+    - Nom: 'AGDLP_DOSSIER_OPERATEURS_R-X'
+      Membre_Groupes: ['Operateurs']
+      Scope: 'DomainLocal'
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+
+  Utilisateurs:
+    - Prenom: 'Alice'
+      Nom: 'AA'
+      Membre_Groupes: ['Developpeurs', 'Operateurs']
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+    
+    - Prenom: 'Bob'
+      Nom: 'BB'
+      Membre_Groupes: ['Developpeurs']
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'
+
+    - Prenom: 'Cedric'
+      Nom: 'CC'
+      Membre_Groupes: ['Operateurs']
+      Chemin_DN: 'OU=IT, OU=Service, DC=test, DC=local'

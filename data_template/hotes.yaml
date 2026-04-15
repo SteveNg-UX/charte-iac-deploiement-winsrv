@@ -1,0 +1,16 @@
+#SERVEURS:
+#  - Nom: 'Nom_Hote_1'
+#    Ipv4: 'Adresse_1'
+#    Utilisateur: 'Nom_Utilisateur_1'
+#    Cle_SSH: 'Chemin\\Clef_SSH_Hote_1.pem'
+#
+#  - Nom: 'Nom_Hote_2'
+#    Ipv4: 'Adresse_2'
+#    Utilisateur: 'Nom_Utilisateur_2'
+#    Cle_SSH: 'Chemin\\Clef_SSH_Hote_2.pem'
+
+SERVEURS:
+  - Nom: ''
+    Ipv4: ''
+    Utilisateur: ''
+    Cle_SSH: ''

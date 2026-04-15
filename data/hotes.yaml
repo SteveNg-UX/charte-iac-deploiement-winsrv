@@ -1,0 +1,24 @@
+SERVEURS:
+  - Nom: 'vm01-dc-prod-75'
+    Ipv4: '10.0.0.10'
+    Port: 5985
+    Utilisateur: 'adm01'
+    Cle_SSH: 'E:\gestion_cle_ssh\id_adm01.pem'
+
+  - Nom: 'vm01-ca-prod-75'
+    Ipv4: '10.0.0.11'
+    Port: 5985
+    Utilisateur: 'adm01'
+    Cle_SSH: 'E:\gestion_cle_ssh\id_adm01.pem'
+
+  - Nom: 'vm01-web-prod-75'
+    Ipv4: '10.0.0.12'
+    Port: 5985
+    Utilisateur: 'adm01'
+    Cle_SSH: 'E:\gestion_cle_ssh\id_adm01.pem'
+
+  - Nom: 'srv01-hv-prod-75'
+    Ipv4: '10.0.0.13'
+    Port: 5985
+    Utilisateur: 'adm01'
+    Cle_SSH: 'E:\gestion_cle_ssh\id_adm01.pem'
