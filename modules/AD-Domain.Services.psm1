@@ -1,8 +1,8 @@
 $SAFE_PASSWORD = Read-Host("Mot de passe de secours : ")
 $DATA = $(Charger-DonneYAML -CHEMIN_FICHIER_YAML "..\data\AD-Domain-Services\donnee.yaml").DONNEE
 
-if ((Get-WindowsFeature -Name "AD-Domain-Services").InstallState -eq 'Installed'){
-    Install-WindowsFeature -Name "AD-Domain-Services" -IncludeManagementTools
+if ((Get-WindowsFeature -Name "AD-Domain-Services").InstallState -ne 'Installed'){
+    Install-WindowsFeature -Name "AD-Domain-Services" -IncludeManagementTools -Force
 }
 
 Add-WindowsFeature -Name "AD-Domain-Services", "DNS", "RSAT-AD-Tools", "RSAT-RemoteAccess", "GPMC" -IncludeAllSubFeature
