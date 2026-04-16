@@ -3,22 +3,22 @@
 #  CACommonName: ''
 #  CADistinguishedNameSuffix: ''
 #  CADistinguishedName: ''
-#  IgnoreUnicode: 'False'
-#  OverwriteExistingKey: 'False'
-#  OverwriteExistingCAinDS: 'False'
+#  IgnoreUnicode: false
+#  OverwriteExistingKey: false
+#  OverwriteExistingCAinDS: false
 #  ValidityPeriod: 'Years'
 #  ValidityPeriodUnits: 5
 #  CryptoProviderName: 'RSA'
 #  HashAlgorithmName: 'SHA1'
 #  KeyLenght: 2048
 #  KeyContainerName: ''
-#  AllowAdministratorInteraction: 'False'
+#  AllowAdministratorInteraction: false
 #  CertFile: ''
 #  CertificateID: ''
 #  OutputCertRequestFile: ''
 #  DatabaseDirectory: 'C:\Windows\system32\CertLog'
 #  LogDirectory: 'C:\Windows\system32\CertLog'
-#  OverwriteExistingDatabase: 'False'
+#  OverwriteExistingDatabase: false
 #  ParentCA: ''
 
 DONNEE:
@@ -26,20 +26,20 @@ DONNEE:
   CACommonName: ''
   CADistinguishedNameSuffix: ''
   CADistinguishedName: ''
-  IgnoreUnicode: 'False'
-  OverwriteExistingKey: 'False'
-  OverwriteExistingCAinDS: 'False'
+  IgnoreUnicode: false
+  OverwriteExistingKey: false
+  OverwriteExistingCAinDS: false
   ValidityPeriod: 'Years'
   ValidityPeriodUnits: 5
   CryptoProviderName: 'RSA'
   HashAlgorithmName: 'SHA1'
-  KeyLenght: 2048
+  KeyLength: 2048
   KeyContainerName: ''
-  AllowAdministratorInteraction: 'False'
+  AllowAdministratorInteraction: false
   CertFile: ''
   CertificateID: ''
   OutputCertRequestFile: ''
   DatabaseDirectory: 'C:\Windows\system32\CertLog'
   LogDirectory: 'C:\Windows\system32\CertLog'
-  OverwriteExistingDatabase: 'False'
+  OverwriteExistingDatabase: false
   ParentCA: ''

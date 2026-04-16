@@ -3,5 +3,3 @@ $DATA = $(Charger-DonneYAML -CHEMIN_FICHIER_YAML "..\data\Hyper-V\donnee.yaml").
 if ((Get-WindowsFeature -Name "Hyper-V").InstallState -ne 'Installed'){
     Install-WindowsFeature -Name "Hyper-V" -IncludeManagementTools -Force
 }
-
-Install-AdcsCertificationAuthority -CAType EnterpriseRootCA
