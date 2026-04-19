@@ -2,7 +2,7 @@ $DONNEE = $(Charger-DonneYAML -CHEMIN_FICHIER_YAML "..\data\AD-Certificate\donne
 $MDP_FICHIER_CERT = (Read-Host "Mot de passe utilisateur" -AsSecureString)
 
 if ((Get-WindowsFeature -Name "AD-Certificate").InstallState -ne 'Installed'){
-    Install-WindowsFeature -Name "AD-Certificate" -IncludeManagementTools -Force
+    Install-WindowsFeature -Name "AD-Certificate" -IncludeManagementTools -IncludeAllSubFeature
 }
 
 Import-Module -Name "ADCSDeployment"

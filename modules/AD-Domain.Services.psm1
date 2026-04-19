@@ -2,7 +2,7 @@ $DONNEE = $(Charger-DonneYAML -CHEMIN_FICHIER_YAML "..\data\AD-Domain-Services\d
 $MDP_SECOURS = (Read-Host "Mot de passe de secours" -AsSecureString)
 
 if ((Get-WindowsFeature -Name "AD-Domain-Services").InstallState -ne 'Installed'){
-    Install-WindowsFeature -Name "AD-Domain-Services" -IncludeManagementTools -Force
+    Install-WindowsFeature -Name "AD-Domain-Services" -IncludeManagementTools -IncludeAllSubFeature
 }
 
 Import-Module -Name "ADDSDeployment"
