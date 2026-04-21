@@ -1,4 +1,10 @@
 DONNEE:
+  ZonePrimaire:
+    Nome:
+    PorteeReplication: "Forest"
+  ZoneSecondaire:
+    Nome:
+    ServeursMaitre: []
   Enregistrement:
     A:
     - Nom:
