@@ -14,20 +14,20 @@ DONNEE:
   Switch:
   - Nom: "vSwitch"
     NomInterfaceReseau: "Ethernet"
-    AutoriserGestionOS: true
+    AutoriserGestionOS:
     ModeBandePassanteMinimale: 
-    ActiverVirtualisationEntreeSortie: false
-    ActiverPacketDirect: false
-    ActiverRegroupementEmbarque: false
+    ActiverVirtualisationEntreeSortie:
+    ActiverPacketDirect:
+    ActiverRegroupementEmbarque:
   VM:
   - Nom:
-    MemoryStartupBytes:
+    MemoireRAM:
     Generation:
-    NewVHDPath:
-    NewVHDSizeBytes:
-    BootDevice:
-    SwitchName:
-    Path:
-    SourceGuestStatePath:
+    CheminStockageVHD:
+    TailleOctetStockageVHD:
+    DispositifDemarrage:
+    NomSwitch:
+    CheminVM:
+    CheminEtatInviteSource:
     Version:
-    GuestStateIsolationType:
+    TypeIsolationEtatInvite:
