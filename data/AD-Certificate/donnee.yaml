@@ -20,4 +20,4 @@ DONNEE:DONNEE:
   LogDirectory: 'C:\Windows\system32\CertLog'
   OverwriteExistingDatabase: false
   ParentCA: ''
-  SRV_ADDS_ADDR:
+  SRV_ADDS_ADDR: ''
