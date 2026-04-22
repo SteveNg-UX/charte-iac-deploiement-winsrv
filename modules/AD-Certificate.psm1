@@ -6,6 +6,12 @@ if ((Get-WindowsFeature -Name "AD-Certificate").InstallState -ne 'Installed'){
 }
 
 Import-Module -Name "ADCSDeployment"
+
+if (-not (Get-Command -Name "Get-ADDomain" -ErrorAction SilentlyContinue)) {
+    Set-DnsClientServerAddress -ServerAddresses $DONNEE.SRV_ADDS_ADDR -InterfaceAlias "Ethernet"
+    Add-Computer -DomainName $DONNEE.CACommonName
+}
+
 Install-AdcsCertificationAuthority `
     -AllowAdministratorInteraction:$DONNEE.AllowAdministratorInteraction `
     -ValidityPeriod $DONNEE.ValidityPeriod `
